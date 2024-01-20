@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
     <!-- tailwind custom color -->
     <script>
         tailwind.config = {
@@ -34,15 +37,80 @@
     </style>
 </head>
 
-<body>
-    <header>
+<body class="font-manrope scroll-smooth">
+    <header class="lg:container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+                <div class="space-y-3">
+                    <h1 class=" text-3xl lg:text-7xl font-extrabold">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House</h1>
+                       <p class="">Tea and Botanical Solutions Supplier Give Optimum <br>
+                        Satisfaction To Your Taste Buds.</p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+                <div>
+                    <img src="images/banner.png" alt="banner" class=" w-full lg:max-w-md  " />
+                    <div class="flex items-center space-x-3 drop-shadow-lg bg-white lg:w-3/5 p-5 -translate-y-14 rounded-lg">
+                        <i class="ri-star-fill text-amber-500 text-4xl"></i>
+                        <div>
+                            <h3>5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </header>
-    <main>
+    <main class="container mx-auto">
+        <!-- featured section -->
+        <section class="text-center my-24 space-y-3 ">
+            <h1 class="text-5xl font-extrabold">Our Featured Products</h1>
+            <p class="lg:w-1/2 mx-auto opacity-65 pb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <!-- card grid section -->
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-4">
+                <!-- first card -->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-7">
+                    <figure><img src="images/tea-1.png" alt="tea" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl font-bold">Milk Tea!</h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                  </div>
+                <!-- second card -->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-7">
+                    <figure><img src="images/tea-2.png" alt="tea" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl font-bold">Black Tea</h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                  </div>
+                <!-- third card -->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-7">
+                    <figure><img src="images/tea-3.png" alt="tea" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl font-bold">Lemon Tea</h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                  </div>
+                <!-- fourth card -->
+                <div class="card bg-gradient-to-r from-[#F4F4F4] to-[#F4F4F4] shadow-xl p-7">
+                    <figure><img src="images/tea-4.png" alt="tea" /></figure>
+                    <div class="card-body">
+                      <h2 class="text-3xl font-bold">Green Tea</h2>
+                      <p>Creamer could be replaced by fresh milk</p>
+                    </div>
+                  </div>
+            </div>
+            
+        </section>
 
     </main>
     <footer>
-        
+
     </footer>
 
 </body>
